@@ -1,0 +1,459 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    background: #F3F3F5;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.labour{
+  background-color: #f3f3f5;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: rgba(25, 25, 25, 0.95);
+  transition: all 0.5s;
+  z-index: 997;
+  height: 100px;
+  font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  font-weight: 600;
+  
+  
+  
+}
+
+#header.fixed-top {
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  
+}
+
+.navbar li {
+  position: relative;
+ 
+}
+
+.navbar>ul>li {
+  margin-left: 5px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 15px 24px 15px;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a,
+.navbar a.active {
+  background: #106861;
+}
+
+
+
+
+/**
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../img//HERO.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeLegibility !important;
+}
+
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  /* border: 2px solid hsl(0, 0%, 0%); */
+  color: #fff;
+  text-decoration: none;
+  background: #106861;
+}
+
+#hero .btn-get-started:hover {
+  background: #106861;
+  border-color: #106861;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero .container {
+    padding-top: 40px;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about{
+  padding-top: 3%;
+  background-color: #f3f3f5;
+  font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeLegibility !important;
+}
+
+.icon-box-about{
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+.about-body h1
+{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: black;
+  position: relative;
+  z-index: 2;
+  /* text-align: center; */
+  margin-bottom: 2%;
+}
+.about-body p{
+  font-size: 20px;
+
+}
+
+.about-body button{
+  background-color:#106861;
+  width: 50%;
+  color: white;
+  margin: 5px;
+  padding: 15px 20px;
+  border-radius: 3px;
+  margin-top: 3%;
+  border: none;
+}
+
+.about-body button:hover{
+  background-color: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+  color: white;
+}
+
+.rowabout{
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.Footer{
+  background-color: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+  font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  
+}
+
+#footer {
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background-color: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 15px;
+  background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+  color: #fff;
+  border-top: 4px solid #106861;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 36px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #262626;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  
+  
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #106861;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #ed5b5b;
+  font-size: 18px;
+  line-height: 1;
+  
+  
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #eb4444;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #106861;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4;
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+  background: #e82d2d;
+}
+
+#footer .copyright {
+  border-top: 1px solid #262626;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+ 
+}
+
+#footer .credits a {
+  color: #106861;
+  text-decoration: none;
+}
+
+@media (max-width: 575px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
+}
+
+
+
